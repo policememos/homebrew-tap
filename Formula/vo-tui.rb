@@ -6,8 +6,8 @@ class VoTui < Formula
   license "MIT"
 
   depends_on "k1low/tap/vo"
-  depends_on "python@3.14"
   depends_on :macos
+  depends_on "python@3.14"
 
   def install
     bin.install "vo_tui.py" => "vo-tui"
