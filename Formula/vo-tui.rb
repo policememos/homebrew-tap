@@ -12,7 +12,7 @@ class VoTui < Formula
   def install
     bin.install "vo_tui.py" => "vo-tui"
     inreplace bin/"vo-tui", "#!/usr/bin/env python3",
-      "#!#{Formula[\"python@3.14\"].opt_bin}/python3"
+      "#!#{Formula["python@3.14"].opt_bin}/python3"
   end
 
   test do
