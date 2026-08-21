@@ -5,9 +5,9 @@ class VoTui < Formula
   sha256 "1ff511634504214f773d668d32b75e84d72996ec359c4770b68d4dafc470f5e5"
   license "MIT"
 
-  depends_on :macos
   depends_on "k1low/tap/vo"
   depends_on "python@3.14"
+  depends_on :macos
 
   def install
     bin.install "vo_tui.py" => "vo-tui"
